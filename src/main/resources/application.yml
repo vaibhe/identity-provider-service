@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: identity-provider-service
+
+  datasource:
+    url: jdbc:postgresql://192.168.29.72:5432/postgres
+    username: postgres
+    password: mypass
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+server:
+  port: 9000
